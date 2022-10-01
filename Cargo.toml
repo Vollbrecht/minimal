@@ -16,19 +16,7 @@ opt-level = "z"
 [dependencies]
 esp-idf-sys = { version = "0.31.9", features = ["binstart"] }
 
-esp-idf-svc = { git = "https://github.com/esp-rs/esp-idf-svc", features = [
-    "nightly",
-    "experimental",
-    "embassy-time-driver",
-    "embassy-time-isr-queue",
-]}
-
-esp-idf-hal = {  git = "https://github.com/esp-rs/esp-idf-hal", features = [
-    "edge-executor",
-    "embassy-sync",
-    "embassy-time",
-    "critical-section",
-] }
+esp-idf-svc = { git = "https://github.com/esp-rs/esp-idf-svc" }
 
 
 [build-dependencies]
